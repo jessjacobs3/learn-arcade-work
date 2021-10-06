@@ -86,7 +86,7 @@ def main():
             print("You made it across campus, you win!")
             done = True
 
-        if  just_traveled >= miles_traveled:
+        if just_traveled >= miles_traveled:
             print("You got caught by the cops.")
             print("You are dead!")
             done = True
