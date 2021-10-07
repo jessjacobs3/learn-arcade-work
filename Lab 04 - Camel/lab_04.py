@@ -8,7 +8,7 @@ def main():
     print("")
     # Variables:
 
-    miles_traveled= 0
+    miles_traveled = 0
     thirst = 0
     fatigue = 0
     just_traveled = -20
@@ -18,7 +18,7 @@ def main():
 
     # start main loop
     while not done:
-        fullspeed = random.randrange(20, 25)
+        fullspeed = random .randrange(20, 25)
         moderatespeed = random.randrange(10, 15)
         print("")
         print("A. Yay, you found some water. Drink it.")
@@ -40,7 +40,7 @@ def main():
             print("Miles traveled: ", miles_traveled)
             print("Drinks some water", canteen)
             print("Your energy level is: ", fatigue, " joules full.")
-            print("The police are ", just_traveled, "miles behind you.")
+            print("The police are ", (miles_traveled - just_traveled), "miles behind you.")
 
         elif user_choice.lower() == "d":
             fatigue = 0
@@ -55,6 +55,12 @@ def main():
             just_traveled += random.randrange(7, 14)
             oasis = random.randrange(1, 11)
 
+            if oasis == 10:
+                fatigue = 0
+                thirst = 0
+                canteen = 2
+                print("You found an oasis! After taking several drinks, you filled your canteen and you are refreshed.")
+
         elif user_choice.lower() == "b":
             print("You are ", moderatespeed, "miles further along!")
             miles_traveled += random.randrange(10, 20)
@@ -64,20 +70,19 @@ def main():
             just_traveled += random.randrange(7, 14)
             oasis = random.randrange(2, 22)
 
+            if oasis == 10:
+                fatigue = 0
+                thirst = 0
+                canteen = 2
+                print("You found an oasis! After taking several drinks, you filled your canteen and you are refreshed.")
 
         elif user_choice.lower() == "a":
             if canteen == 0:
                 print("You are out of water.")
             else:
                 canteen -= 1
-                thirst *= 0
+                thirst = 0
                 print("You have ", canteen, "drinks left. You are no longer thristy.")
-
-        if oasis == 10:
-            fatigue *= 0
-            thirst *= 0
-            canteen = 2
-            print("You found an oasis! After taking several drinks, you filled your canteen and you are refreshed.")
 
         if just_traveled <= 15:
             print("The police are drawing closer and closer.")
@@ -95,11 +100,11 @@ def main():
             print("You died of hydration; you did not drink enough water.")
             done = True
 
-        if fatigue > 6 and fatigue >= 9 and not done:
-            print("You are getting very tired.")
-
-        if fatigue > 14:
-            print("You are dead.")
-            done = True
+        if not done:
+            if fatigue > 14:
+                print("You are dead.")
+                done = True
+            elif fatigue > 6:
+                print("You are getting very tired.")
 
 main()
