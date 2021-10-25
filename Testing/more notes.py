@@ -91,6 +91,24 @@ for item in my_list:
 
     print(positive_outlook_list)
 
+""" class -- child class of arcade.Window
+    on_mouse_motion
+    set_mouse_visible
+    on_mouse_press
+    
+keyboard: 
+    need starting position
+    need move speed
+    need to stop when key released
+    on_key_press
+    on_key_release 
+    
+game controller
+    
+
+"""
+
+
 
 
 
