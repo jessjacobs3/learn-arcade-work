@@ -15,7 +15,7 @@ class Volleyball:
         self.position_x = position_x
         self.position_y = position_y
         self.change_x = change_x
-        self.change_y = change_y
+    self.change_y = change_y
         self.radius = radius
         self.color = color
 
@@ -71,22 +71,22 @@ class Basketball:
         arcade.draw_circle_filled(self.position_x, self.position_y - 9, self.radius, self.color)
         arcade.draw_circle_filled(self.position_x, self.position_y - 10, self.radius, self.color)
 
-    def update(self):
-        # Move the ball
-        self.position_y += self.change_y
-        self.position_x += self.change_x
+def update(self):
+    # Move the ball
+    self.position_y += self.change_y
+    self.position_x += self.change_x
 
-        if self.position_x < self.radius:
-            self.position_x = self.radius
-            arcade.play_sound(self.sound_two)
+    if self.position_x < self.radius:
+        self.position_x = self.radius
+        arcade.play_sound(self.sound_two)
 
-        if self.position_x > SCREEN_WIDTH - self.radius:
-            self.position_x = SCREEN_WIDTH - self.radius
-            arcade.play_sound(self.sound_two)
+    if self.position_x > SCREEN_WIDTH - self.radius:
+        self.position_x = SCREEN_WIDTH - self.radius
+        arcade.play_sound(self.sound_two)
 
-        if self.position_y < self.radius:
-            self.position_y = self.radius
-            arcade.play_sound(self.sound_two)
+    if self.position_y < self.radius:
+        self.position_y = self.radius
+        arcade.play_sound(self.sound_two)
 
         if self.position_y > SCREEN_HEIGHT - self.radius:
             self.position_y = SCREEN_HEIGHT - self.radius
