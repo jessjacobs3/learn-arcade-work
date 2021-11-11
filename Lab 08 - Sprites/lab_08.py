@@ -278,17 +278,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-coin_placed_successfully = False
-
-        while not coin_placed_successfully:
-        coin.center_x = random.randrange(50, SCREEN_WIDTH * 2)
-        coin.center_y = random.randrange(-400, 400)
-
-        wall_hit_list = arcade.check_for_collision_with_list(coin, self.wall_list)
-        coin_hit_list = arcade.check_for_collision_with_list(coin, self.coin_list)
-
-                if len(wall_hit_list) == 0 and len(coin_hit_list) == 0:
-                    # It is!
-                    coin_placed_successfully = True
