@@ -1,0 +1,90 @@
+Jessica Jacobs          Date: 12/09/2021
+     Quantitative Reasoning Reflection
+
+1. There are several methods and statements used to program. Some techniques are
+needed or are better to use more so than others at different times. For "if"
+statements: these are used if there are more than two possible paths + to be
+taken. 'If' statements are also known as 'conditional statements'. These
+statements see which variable is smaller and which is larger and whether to run
+the code or not run the code. If something is not being compared and does not
+fall through the if statement, then an else statement occurs (also called an elif
+statement via Python). Our program can than just run straight through. An example
+looks like the following:
+
+    temperature = int(input("What is the temperature in Fahrenheit? "))
+    if temperature > 90:
+        print("It is hot outside")
+    elif temperature < 30:
+        print("It is cold outside")
+    else:
+        print("It is not hot outside")
+    print("Done")
+
+Likewise, == means that something is equal. Using just one plain = sign
+means just what a variable equals. For example: x = character
+We can take smaller samples and build a larger sample out of it. Breaking
+things into smaller and smaller parts is often easier and highly recommended
+making a bigger problem much simpler. It is important to apply examples that
+you have done before and apply examples of code and patterns.
+
+For loops statements, a 'for loop' allows us to loop a certain number of times. A
+while loop, loops until a certain condition (such as a game over) occurs. We use
+a for loop when we know how many times to loop, and we use a while loop when we
+want to loop until something happens. A while loop can be used anywhere a for loop
+is used. A while loop looks like the following:
+    i = 0
+    while i < 10:
+        print(i)
+        i = i + 1
+A for loop looks like the following:
+    for i in range(10):
+        print(i)
+
+To write a function, we use the keyword def (short for 'define'). Here is an example:
+def print_hello():
+    """ This is a comment that describes the function. """
+    print("Hello!")
+
+We have to call a main function at the end of the program always in order to get
+any program to run. def main()   main()
+
+
+
+2. Reading code and communicating through code is extremely important.
+There are several things a programmer can do to make their code easier to read
+and understand for other programmers. We use comments a lot using a '#' above a
+line of code. These help separate and keep things organized. Using descriptive
+variable names is also very important to understand. The more descriptive one can
+make their variables, the better. An example of this would be the variable 't'
+vs actually using the word 'temperature'. 'temperature' is better. Likewise,
+line spacing is extremely important. Grouping the 'like things' together is highly
+recommended even for the programmer's sake. Using several check-ins and keeping
+track of one's changes is also important to look out for. Using titles and plain
+documentation outside of code to explain what is going on is also highly
+recommended. The more detail there is the better. Having a dialogue or someone to
+ask questions with is also a huge part of having success.
+
+
+
+3. Testing and evaluating the accuracy of code is just part of the coding process.
+I know if code runs right if once running it, I am given no error. If the code gives
+me some sort of error, I know that part of my code is wrong. It therefore crashes.
+What is nice about coding though and PyCharm is that it tells you were their error
+is located and what is wrong with it. When you look down below at the error, the
+section of code is highlighted and gives you feedback as to what is wrong with it.
+If a character or something does not move right, we know it does not run right.
+It is that simple. Sometimes the code will run and act like it is right, but when
+dealing with numbers, we know that code isn't quite right if it adds 1 + 1 and says
+it is 3 instead of 2. It is a good idea to frequently often check the running your code.
+
+
+
+4. There are several limitations to using numerical methods to make decisions.
+We cannot just replace humans with algorithms, and we cannot just evaluate students
+based solely on their test scores. It is too easy to mess things up on algorithms.
+Things like this are also influencing society completely. In the world today, there
+are so many more things in the world than stats. We cannot just evaluate people
+based on their test scores, just like we cannot evaluate teachers based on their
+students' scores and performance. There are so many other factors and limitations
+that are at play/stake. No test is comparable to another test, no student is the
+same student, no student takes the same amount of time on a test.
