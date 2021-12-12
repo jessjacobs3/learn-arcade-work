@@ -88,3 +88,30 @@ based on their test scores, just like we cannot evaluate teachers based on their
 students' scores and performance. There are so many other factors and limitations
 that are at play/stake. No test is comparable to another test, no student is the
 same student, no student takes the same amount of time on a test.
+
+print("Welcome to The Fishy Coin Collector. Are you up for this challenge? "
+      "Collect the coin but watch out for the spikes!")
+print("Get ready...")
+
+print("10")
+time.sleep(1)
+print("9")
+time.sleep(1)
+print("8")
+time.sleep(1)
+print("7")
+time.sleep(1)
+print("6")
+time.sleep(1)
+print("5")
+time.sleep(1)
+print("4")
+time.sleep(1)
+print("3")
+time.sleep(1)
+print("2")
+time.sleep(1)
+print("1")
+time.sleep(1)
+
+print("Ready, Set, Go!!!")
